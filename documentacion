@@ -1,0 +1,8 @@
+Cómo ejecutar el sistema:
+Para ejecutar el sistema, primero asegúrate de tener Python instalado en tu entorno. Luego, desde la terminal ubicada en la raíz del proyecto, ejecuta el archivo principal del sistema utilizando el comando python -m src.cli. Esto iniciará la interfaz de línea de comandos (CLI) donde podrás interactuar con las funcionalidades principales del sistema de gestión clínica.
+
+Cómo ejecutar las pruebas:
+Las pruebas unitarias están ubicadas en la carpeta test. Para ejecutarlas, utiliza el comando python -m unittest discover -s test desde la raíz del proyecto. Esto buscará y ejecutará automáticamente todos los archivos de prueba, permitiéndote verificar que las distintas partes del sistema funcionan correctamente.
+
+Explicación de diseño general:
+El sistema está diseñado siguiendo una arquitectura modular, separando las responsabilidades en diferentes archivos y clases. Existen clases para representar pacientes, médicos, especialidades, recetas y turnos, cada una con sus propios métodos y atributos. La clase principal Clinica actúa como punto central de gestión, mientras que la interfaz CLI permite la interacción del usuario. Además, se utilizan excepciones personalizadas para manejar errores específicos y mejorar la robustez del sistema. Esta estructura facilita el mantenimiento, la escalabilidad y la realización de pruebas unitarias.
